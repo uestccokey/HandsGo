@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_manual"
+        layout="@layout/manual_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/board_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/first_step"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_video_item_layout"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="开局"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/fast_prev_step"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_video_item_layout"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="快退"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/prev_step"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_video_item_layout"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="后退"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/next_step"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_video_item_layout"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="前进"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/fast_next_step"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_video_item_layout"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="快进"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/last_step"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_video_item_layout"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="终局"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/prev_var"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_video_item_layout"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="上一分支"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/next_var"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_video_item_layout"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="下一分支"
+                        android:textColor="#ff000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:drawable/edit_text"
+                android:scrollbarStyle="outsideOverlay" >
+
+                <TextView
+                    android:id="@+id/text_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </ScrollView>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/refreshing_progress_manual"
+            layout="@layout/vw_generic_progress"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

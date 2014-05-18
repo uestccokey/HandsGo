@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="fillColor" format="color" />
+        <attr name="strokeColor" format="color" />
+        <attr name="radius" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TitleFlowIndicator">
+        <attr name="titlePadding" format="integer" />
+        <attr name="selectedColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="float" />
+        <attr name="footerLineHeight" format="integer" />
+        <attr name="footerColor" format="color" />
+        <attr name="footerTriangleHeight" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TitleIndicator">
+        <attr name="linePaddingPercent" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:handsgo="http://schemas.android.com/apk/res/com.soyomaker.handsgo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_situation"
+        layout="@layout/situation_title" />
+
+    <RelativeLayout
+        android:id="@+id/app_tips_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/app_tips_hide_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/umeng_xp_x_button_selector" />
+
+        <TextView
+            android:id="@+id/app_tips_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/app_tips_hide_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:textColor="#ff000000"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <com.soyomaker.handsgo.view.TitleIndicator
+        android:id="@+id/source_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        handsgo:linePaddingPercent="5" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/listview_situation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/list_item_bg_normal"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dip"
+            android:fadeScrollbars="true"
+            android:fadingEdgeLength="0dip"
+            android:listSelector="@drawable/list_item_bg_selected"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip" />
+
+        <include
+            android:id="@+id/refreshing_progress_situation"
+            layout="@layout/vw_generic_progress"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

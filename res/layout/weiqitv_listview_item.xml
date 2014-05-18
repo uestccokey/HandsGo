@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_video_item_layout"
+        android:clickable="true"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/video_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_image"
+            android:layout_centerHorizontal="true"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_layout_2"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_video_item_layout"
+        android:clickable="true"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/video_image_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/video_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_image_2"
+            android:layout_centerHorizontal="true"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

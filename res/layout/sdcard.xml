@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_sdcard"
+        layout="@layout/sdcard_title" />
+
+    <RelativeLayout
+        android:id="@+id/path_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_sdcard"
+        android:background="#808080" >
+
+        <TextView
+            android:id="@+id/path_text"
+            android:layout_width="265dp"
+            android:layout_height="32dp"
+            android:ellipsize="middle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="#fffefefe"
+            android:textSize="20sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/scan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="90"
+            android:text="@string/scan"
+            android:textColor="#fffefefe"
+            android:textStyle="bold" >
+        </Button>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/file_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/path_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line"
+        android:dividerHeight="1dip"
+        android:fadeScrollbars="true"
+        android:fadingEdgeLength="0dip"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/list_item_bg_selected"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+    </ListView>
+
+</RelativeLayout>

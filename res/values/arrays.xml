@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="manual_source">
+        <item>xgoo</item>
+        <item>sina</item>
+        <item>tom</item>
+    </string-array>
+    <string-array name="study_source">
+        <item>名局细解</item>
+        <item>围棋TV</item>
+        <item>围棋字典</item>
+    </string-array>
+    <string-array name="live_source">
+        <item>TOM直播</item>
+        <item>围棋TV</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="popmenu_width">104.0dip</dimen>
+    <dimen name="popmenu_yoff">2.0dip</dimen>
+    <dimen name="bottom_tab_height">62dp</dimen>
+
+</resources>

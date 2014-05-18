@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="window_bg">#fff0f0f0</color>
+    <color name="normal_chessmanual">#ff0f0f0f</color>
+    <color name="history_chessmanual">#fff0f0f0</color>
+    <color name="transparent">#00000000</color>
+    <!-- title indicator颜色 -->
+    <color name="title_indicator_light">#202020</color>
+    <color name="title_indicator_def">#acb7cb</color>
+    <color name="title_indicator_line">#3b3b3b</color>
+
+</resources>

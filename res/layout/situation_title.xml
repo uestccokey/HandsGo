@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="@drawable/title_bar"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/situation_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="192dip"
+        android:shadowColor="#ff333333"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"
+        android:singleLine="true"
+        android:text="@string/situation_title_text"
+        android:textColor="#ffeeeeee"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/situation_title_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/refresh_selector"
+        android:gravity="center" />
+
+</RelativeLayout>

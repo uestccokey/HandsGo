@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:handsgo="http://schemas.android.com/apk/res/com.soyomaker.handsgo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_study"
+        layout="@layout/study_title" />
+
+    <com.soyomaker.handsgo.view.TitleIndicator
+        android:id="@+id/source_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        handsgo:linePaddingPercent="5" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/listview_study"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/list_item_bg_normal"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dip"
+            android:fadeScrollbars="true"
+            android:fadingEdgeLength="0dip"
+            android:listSelector="@drawable/list_item_bg_selected"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip" />
+
+        <include
+            android:id="@+id/refreshing_progress_study"
+            layout="@layout/vw_generic_progress"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

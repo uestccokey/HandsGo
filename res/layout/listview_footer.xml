@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 列表底部 - 载入更多 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/list_selector_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ask_for_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/click_to_load_more" />
+
+    <ProgressBar
+        android:id="@+id/rectangleProgressBar"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/ask_for_more"
+        android:visibility="gone" />
+
+</RelativeLayout>
